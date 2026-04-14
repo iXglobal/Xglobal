@@ -38,6 +38,61 @@
             margin-bottom: 1rem;
             color: #475569;
         }
+        
+        /* 响应式设计 - 针对小屏幕设备 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            /* 调整网格布局为1列 */
+            [style*="grid-template-columns: repeat(2, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+            
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+            
+            /* 调整地图容器高度 */
+            #map-container {
+                height: 400px !important;
+            }
+            
+            /* 调整按钮大小 */
+            .btn {
+                padding: 12px 24px !important;
+                font-size: 16px !important;
+            }
+            
+            /* 调整标签大小 */
+            .tag {
+                padding: 15px !important;
+                font-size: 14px !important;
+            }
+        }
+        
+        /* 响应式设计 - 针对中等屏幕设备 */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* 调整网格布局为2列 */
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
         strong {
             font-weight: 600;
             color: #053a8a;
