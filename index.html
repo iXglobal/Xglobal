@@ -273,12 +273,12 @@
         }
         /* 顶部Banner 航运渐变蓝 行业标准配色 */
         .banner {
-            background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 50%, #0284c7 100%);
-            color: #ffffff;
+            background: #ffffff;
+            color: #053a8a;
             text-align: center;
             padding: 80px 30px;
             border-radius: 20px;
-            box-shadow: 0 12px 40px rgba(14, 165, 233, 0.3);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
             margin-bottom: 50px;
             position: relative;
             overflow: hidden;
@@ -291,7 +291,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.05) 0%, rgba(14, 165, 233, 0) 70%);
             animation: float 8s ease-in-out infinite;
         }
         .banner::after {
@@ -301,7 +301,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+            background: linear-gradient(90deg, transparent, #0ea5e9, transparent);
             animation: shimmer 3s ease-in-out infinite;
         }
         @keyframes shimmer {
@@ -314,12 +314,9 @@
             letter-spacing: 2px;
             margin-bottom: 20px;
             text-transform: uppercase; /* 外贸广告大写标题 更专业 */
-            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
             animation: fadeIn 1.2s ease-out 0.2s both;
-            background: linear-gradient(90deg, #ffffff, #e0f2fe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #0284c7;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -336,12 +333,14 @@
             font-weight: 700;
             letter-spacing: 1px;
             margin-bottom: 25px;
-            opacity: 0.95;
+            opacity: 1;
+            color: #053a8a;
             animation: fadeIn 1.2s ease-out 0.3s both;
         }
         .banner p {
             font-size: 20px;
-            opacity: 0.95;
+            opacity: 1;
+            color: #475569;
             max-width: 800px;
             margin: 0 auto 30px;
             animation: fadeIn 1.2s ease-out 0.4s both;
@@ -372,7 +371,6 @@
             padding: 36px;
             margin-bottom: 35px;
             box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-            border-left: 8px solid #0ea5e9;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             animation: fadeIn 1s ease-out;
             position: relative;
@@ -707,7 +705,7 @@
         </div>
         <!-- 头部Banner -->
         <div class="banner">
-            <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 20px; animation: pulse 2s infinite;" data-lang-key="limited-time-offer">
+            <div style="display: inline-block; background: rgba(14, 165, 233, 0.1); padding: 8px 16px; border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 20px; animation: pulse 2s infinite; color: #0284c7;" data-lang-key="limited-time-offer">
                 LIMITED TIME OFFER
             </div>
             <h1 style="font-size: 40px; margin-bottom: 20px;">Maritime Express Line</h1>
@@ -718,13 +716,13 @@
                 JingTang Port ➔ Jeddah | Damietta | Mediterranean Ports
             </p>
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <div style="background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600;" data-lang-key="vessel-type">
+                <div style="background: rgba(14, 165, 233, 0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #053a8a; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';" data-lang-key="banner-vessel-type">
                     🚢 DWT 58,000 Bulk Vessel
                 </div>
-                <div style="background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600;" data-lang-key="sailing-date">
+                <div style="background: rgba(14, 165, 233, 0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #053a8a; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';" data-lang-key="sailing-date">
                     📅 June 2026 Sailing
                 </div>
-                <div style="background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600;" data-lang-key="global-coverage">
+                <div style="background: rgba(14, 165, 233, 0.1); padding: 12px 24px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #053a8a; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';" data-lang-key="global-coverage">
                     🌍 Global Coverage
                 </div>
             </div>
@@ -781,8 +779,8 @@
                     geo: {
                         map: 'world', // 使用世界地图
                         roam: true, // 允许地图缩放和拖动
-                        zoom: 2.4, // 进一步降低缩放比例，确保整个航线都能显示
-                        center: [60, 15], // 调整地图中心点，确保航线居中显示
+                        zoom: 2.8, // 进一步降低缩放比例，确保整个航线都能显示
+                        center: [60, 25], // 调整地图中心点，确保航线居中显示
                         itemStyle: {
                             areaColor: '#e9f5ff', // 地图区域颜色
                             borderColor: '#999' // 地图边界颜色
@@ -999,7 +997,7 @@
     </div>
 
         <!-- 核心航线信息 -->
-        <div class="card" style="border-left-color: #0284c7; margin-top: 50px;">
+        <div class="card" style="margin-top: 50px;">
             <h2 style="font-size: 24px; margin-bottom: 30px;" data-lang-key="vessel-route-info">🚢 Vessel & Route Basic Info</h2>
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
                 <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
@@ -1086,7 +1084,7 @@
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; text-align: center; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
                     <div style="font-size: 36px; margin-bottom: 15px;">🚚</div>
                     <div style="font-size: 18px; font-weight: 700; color: #0284c7; margin-bottom: 10px;" data-lang-key="direct-shippers">Direct Shippers</div>
-                    <div style="font-size: 14px; color: #64748b;" data-lang-key="secure-cargo-space">Secure your cargo space with premium service and no rolling risk.</div>
+                    <div style="font-size: 14px; color: #64748b;" data-lang-key="direct-shippers-desc">For direct shippers, we offer competitive rates and reliable service for all your shipping needs.</div>
                 </div>
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; text-align: center; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
                     <div style="font-size: 36px; margin-bottom: 15px;">🤝</div>
@@ -1098,10 +1096,7 @@
 
         <!-- 联系方式（转化核心） -->
         <div class="card" style="margin-top: 40px;">
-
-            <h2 style="font-size: 24px; margin-bottom: 30px;" data-lang-key="secure-cargo-space">
-                📩 Secure Your Cargo Space Now
-            </h2>
+            <h2 style="font-size: 24px; margin-bottom: 30px;" data-lang-key="contact-us">📩 Contact Us</h2>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px;">
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; text-align: center; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
                     <div style="font-size: 36px; margin-bottom: 15px;">👥</div>
@@ -1117,89 +1112,58 @@
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; text-align: center; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
                     <div style="font-size: 36px; margin-bottom: 15px;">📧</div>
                     <div style="font-size: 18px; font-weight: 700; color: #0284c7; margin-bottom: 10px;" data-lang-key="email">Email</div>
-                    <div style="font-size: 14px; color: #64748b;" data-lang-key="email-address">charter@yourcompany.com</div>
+                    <div style="font-size: 14px; color: #64748b;" data-lang-key="email-address">overseas-op<overseas-op@xglobal-log.com></div>
                 </div>
             </div>
-            <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.3s ease; margin-bottom: 30px; cursor: pointer;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                <div style="font-size: 18px; font-weight: 700; color: #0284c7; margin-bottom: 10px;" data-lang-key="remark">Remark:</div>
-                <div style="font-size: 14px; color: #64748b;" data-lang-key="email-remark">Please mention <strong>June Charter + Cargo Type</strong> in your email for a fast response</div>
-            </div>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <button class="btn" onclick="openModal()" style="padding: 15px 30px; font-size: 18px; font-weight: 700; background: #f59e0b;" data-lang-key="get-detailed-quote">获取详细报价</button>
+                <button class="btn" onclick="openModal()" style="padding: 15px 30px; font-size: 18px; font-weight: 700; background: #f59e0b;" data-lang-key="get-detailed-quote">Get Detailed Quote</button>
             </div>
         </div>
 
-        <!-- 页脚 -->
-        <div class="footer" style="margin-top: 50px; padding: 40px 20px; background: #f8fafc; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 30px;">
-                <div>
-                    <div style="font-size: 20px; font-weight: 700; color: #0284c7; margin-bottom: 15px;">Global Logistics Charter Service</div>
-                    <div style="font-size: 14px; color: #64748b; line-height: 1.6;">Professional shipping solution provider with years of experience in global freight forwarding and charter services.</div>
-                </div>
-                <div>
-                    <div style="font-size: 16px; font-weight: 700; color: #0284c7; margin-bottom: 15px;">Quick Links</div>
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <a href="#" style="font-size: 14px; color: #0ea5e9; text-decoration: none; transition: color 0.3s ease;">Home</a>
-                        <a href="#" style="font-size: 14px; color: #0ea5e9; text-decoration: none; transition: color 0.3s ease;">Services</a>
-                        <a href="#" style="font-size: 14px; color: #0ea5e9; text-decoration: none; transition: color 0.3s ease;">About Us</a>
-                        <a href="#" style="font-size: 14px; color: #0ea5e9; text-decoration: none; transition: color 0.3s ease;">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <div style="font-size: 16px; font-weight: 700; color: #0284c7; margin-bottom: 15px;">Contact Us</div>
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <div style="font-size: 14px; color: #64748b;">📧 charter@yourcompany.com</div>
-                        <div style="font-size: 14px; color: #64748b;">📱 +86 XXXXXXXXXX</div>
-                        <div style="font-size: 14px; color: #64748b;">🌍 Global Coverage</div>
-                    </div>
-                </div>
-            </div>
-            <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; text-align: center;">
-                <div style="font-size: 14px; color: #64748b;">© 2026 Global Logistics Charter Service | Professional Shipping Solution Provider</div>
-                <div style="font-size: 12px; color: #94a3b8; margin-top: 10px;">All rights reserved. Designed for global shipping excellence.</div>
-            </div>
-        </div>
+
+
+
     </div>
 
     <!-- 咨询模态框 -->
     <div id="consultModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 style="color: #053a8a; margin-bottom: 20px;">📋 Inquiry Form</h2>
+            <h2 style="color: #053a8a; margin-bottom: 20px;" data-lang-key="inquiry-form">📋 Inquiry Form</h2>
             <form name="contact" method="POST" data-netlify="true" id="consultForm">
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Please enter your name">
-                    <div class="error">Please enter your name</div>
+                    <label for="name" data-lang-key="form-name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Please enter your name" data-lang-key="form-name-placeholder">
+                    <div class="error" data-lang-key="form-name-error">Please enter your name</div>
                 </div>
                 <div class="form-group">
-                    <label for="company">Company *</label>
-                    <input type="text" id="company" name="company" required placeholder="Please enter your company name">
-                    <div class="error">Please enter your company name</div>
+                    <label for="company" data-lang-key="form-company">Company *</label>
+                    <input type="text" id="company" name="company" required placeholder="Please enter your company name" data-lang-key="form-company-placeholder">
+                    <div class="error" data-lang-key="form-company-error">Please enter your company name</div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required placeholder="Please enter your email address">
-                    <div class="error">Please enter a valid email address</div>
+                    <label for="email" data-lang-key="form-email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Please enter your email address" data-lang-key="form-email-placeholder">
+                    <div class="error" data-lang-key="form-email-error">Please enter a valid email address</div>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone *</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Please enter your phone number">
-                    <div class="error">Please enter your phone number</div>
+                    <label for="phone" data-lang-key="form-phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Please enter your phone number" data-lang-key="form-phone-placeholder">
+                    <div class="error" data-lang-key="form-phone-error">Please enter your phone number</div>
                 </div>
                 <div class="form-group">
-                    <label for="cargoType">Cargo Type *</label>
-                    <input type="text" id="cargoType" name="cargoType" required placeholder="Please enter cargo type">
-                    <div class="error">Please enter cargo type</div>
+                    <label for="cargoType" data-lang-key="form-cargo-type">Cargo Type *</label>
+                    <input type="text" id="cargoType" name="cargoType" required placeholder="Please enter cargo type" data-lang-key="form-cargo-type-placeholder">
+                    <div class="error" data-lang-key="form-cargo-type-error">Please enter cargo type</div>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Inquiry Details</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Please enter your inquiry details"></textarea>
+                    <label for="message" data-lang-key="form-inquiry-details">Inquiry Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Please enter your inquiry details" data-lang-key="form-inquiry-details-placeholder"></textarea>
                 </div>
                 <button type="submit" class="btn" style="width: 100%; margin-top: 24px; padding: 16px; font-size: 18px; font-weight: 700; position: relative; overflow: hidden;">
-                    <span class="btn-text">Submit Inquiry</span>
+                    <span class="btn-text" data-lang-key="form-submit">Submit Inquiry</span>
                 </button>
             </form>
         </div>
@@ -1212,17 +1176,37 @@
                 'limited-time-offer': '限时优惠！',
                 'exclusive-cargo-space': '专属舱位 • 优质服务 • 极具竞争力的价格',
                 'route-info': '京唐港 ➔ 吉达 | 达米埃塔 | 地中海港口',
-                'vessel-type': '🚢 DWT 58,000 散货船',
+                'vessel-type': '船舶',
+                'banner-vessel-type': '🚢 载重吨 58,000',
                 'sailing-date': '📅 2026年6月航行',
                 'global-coverage': '🌍 全球覆盖',
                 'book-now': '立即预订仓位',
                 'get-quote': '获取报价',
                 'limited-space-available': '舱位有限',
                 'secure-cargo-space': '📩 立即预订您的舱位',
-                'get-detailed-quote': '获取详细报价',
+                'get-detailed-quote': '获取报价',
                 'acceptable-cargo-types': '📦 可承接货物类型（包括但不限于）',
                 'other-cargo-types': '其他类型的货物运输需求？',
-                'customized-solutions': '联系我们获取定制解决方案。我们处理各种类型的货物，并可以提供量身定制的运输选项。',
+                'customized-solutions': '联系我们以获取定制解决方案。',
+                'inquiry-form': '📋 咨询表单',
+                'form-name': '姓名 *',
+                'form-name-placeholder': '请输入您的姓名',
+                'form-name-error': '请输入您的姓名',
+                'form-company': '公司 *',
+                'form-company-placeholder': '请输入您的公司名称',
+                'form-company-error': '请输入您的公司名称',
+                'form-email': '邮箱 *',
+                'form-email-placeholder': '请输入您的邮箱地址',
+                'form-email-error': '请输入有效的邮箱地址',
+                'form-phone': '电话 *',
+                'form-phone-placeholder': '请输入您的电话号码',
+                'form-phone-error': '请输入您的电话号码',
+                'form-cargo-type': '货物类型 *',
+                'form-cargo-type-placeholder': '请输入货物类型',
+                'form-cargo-type-error': '请输入货物类型',
+                'form-inquiry-details': '咨询详情',
+                'form-inquiry-details-placeholder': '请输入您的咨询详情',
+                'form-submit': '提交咨询',
                 'charter-service-advantages': '⭐ 租船服务优势',
                 'exclusive-charter-space': '专属舱位',
                 'no-rolling-risk': '优质服务，自营船舶舱位保障，确保您的货物及时到达。',
@@ -1235,13 +1219,12 @@
                 'full-service': '全方位服务',
                 'comprehensive-service': '从装货港到目的港的全面服务，提供门到门物流解决方案。',
                 'about-us': '🤝 关于我们',
-                'global-freight-forwarders': '全球物流解决方案',
-                'partner-with-us': '与我们合作，获得可靠物流服务和极具竞争力的价格。',
-                'direct-shippers': '直接托运人',
-                'overseas-agents': '海外代理和运营',
-                'collaborate-with-us': '与我们的专业团队合作，实现无缝的全球运营。',
-                'remark': '备注：',
-                'email-remark': '请在邮件中提及 <strong>June Charter + 货物类型</strong> 以获得快速响应',
+                'global-freight-forwarders': '国际化布局',
+                'partner-with-us': '海内外100+分子公司，整合300+各类车辆，可在属地区域提供强力支持.',
+                'direct-shippers': '板块多元化',
+                'direct-shippers-desc': '具备各类货物运输经验，可提供定制化的运输解决方案。',
+                'overseas-agents': '央企背书',
+                'collaborate-with-us': '央企资质/背景，资金实力雄厚，专业运营团队。',
                 'vessel-route-info': '🚢 船舶和航线信息',
                 'sailing-period': '📅 船期',
                 'june-2026': '2026年6月',
@@ -1250,15 +1233,17 @@
                 'ports-of-discharge': '卸货港',
                 'jeddah-damietta': '吉达 / 达米埃塔 / 地中海港口',
                 'vessel-type': '🚢 载重吨',
-                'dwt-58000': '58000',
+                'dwt-58000': ' 58000',
+                'vessel-capacity': '58000',
                 'current-position': '当前状态',
+                'contact-us': '📩 联系我们',
                 'open-jingtang': '待集港',
                 'steel': '钢材',
                 'equipment': '设备',
                 'bags': '吨袋',
                 'vehicles': '车辆',
                 'soc-containers': '自备柜',
-                'project-cargo': '项目货物',
+                'project-cargo': '项目货',
                 'contact-team': '联系团队',
                 'company-name': '上海卓跃达国际物流有限公司',
                 'company-address': '厦门市思明区环岛东路1801号中航紫金广场A栋33层05、06单元',
@@ -1272,17 +1257,37 @@
                 'limited-time-offer': 'LIMITED TIME OFFER',
                 'exclusive-cargo-space': 'EXCLUSIVE CARGO SPACE • PREMIUM SERVICE • COMPETITIVE RATES',
                 'route-info': 'JingTang  ➔ Jeddah | Damietta | Mediterranean',
-                'vessel-type': '🚢 DWT 58,000 Bulk Vessel',
+                'vessel-type': 'DWT',
+                'banner-vessel-type': 'DWT 58,000',
                 'sailing-date': '📅 June 2026 Sailing',
                 'global-coverage': '🌍 Global Coverage',
                 'book-now': 'Booking Now',
                 'get-quote': 'Get Quote',
                 'limited-space-available': 'LIMITED SPACE AVAILABLE',
-                'secure-cargo-space': '📩 Secure Your Cargo Space Now',
-                'get-detailed-quote': 'Get Detailed Quote',
+                'secure-cargo-space': '📩 Contact Us',
+                'get-detailed-quote': 'Get Quote',
                 'acceptable-cargo-types': '📦 Acceptable Cargo Types',
                 'other-cargo-types': 'Need to ship other cargo types?',
-                'customized-solutions': 'Contact us for customized solutions. We handle a wide range of cargo types and can provide tailored shipping options.',
+                'customized-solutions': 'Contact us for customized solutions.',
+                'inquiry-form': '📋 Inquiry Form',
+                'form-name': 'Name *',
+                'form-name-placeholder': 'Please enter your name',
+                'form-name-error': 'Please enter your name',
+                'form-company': 'Company *',
+                'form-company-placeholder': 'Please enter your company name',
+                'form-company-error': 'Please enter your company name',
+                'form-email': 'Email *',
+                'form-email-placeholder': 'Please enter your email address',
+                'form-email-error': 'Please enter a valid email address',
+                'form-phone': 'Phone *',
+                'form-phone-placeholder': 'Please enter your phone number',
+                'form-phone-error': 'Please enter your phone number',
+                'form-cargo-type': 'Cargo Type *',
+                'form-cargo-type-placeholder': 'Please enter cargo type',
+                'form-cargo-type-error': 'Please enter cargo type',
+                'form-inquiry-details': 'Inquiry Details',
+                'form-inquiry-details-placeholder': 'Please enter your inquiry details',
+                'form-submit': 'Submit Inquiry',
                 'charter-service-advantages': '⭐ Charter Service Advantages',
                 'exclusive-charter-space': 'Exclusive Charter Space',
                 'no-rolling-risk': 'Quality service with guaranteed space on our owned vessels, ensuring your cargo arrives on time.',
@@ -1296,12 +1301,12 @@
                 'comprehensive-service': 'Comprehensive service from loading port to destination port, providing door-to-door logistics solutions.',
                 'about-us': '🤝 About Us',
                 'global-freight-forwarders': 'Worldwide Logistics Network Solutions',
-                'partner-with-us': 'Access our worldwide transport network for reliable services, seamless door-to-door logistics, and unbeatable competitive rates.',
-                'direct-shippers': 'Direct Shippers',
-                'overseas-agents': 'Overseas Agents & OP',
-                'collaborate-with-us': 'Collaborate with our professional team for seamless global operations.',
-                'remark': 'Remark:',
-                'email-remark': 'Please mention <strong>June Charter + Cargo Type</strong> in your email for a fast response',
+                'partner-with-us': 'With over 100 subsidiaries and branches worldwide and more than 300 assorted vehicles, we deliver strong local support in our service areas.',
+                'direct-shippers': 'Diversified sectors',
+                'direct-shippers-desc': 'With extensive experience in transporting all types of cargo, we provide customized transportation solutions.',
+                'overseas-agents': 'SOE-backed, professional team',
+                'collaborate-with-us': 'Backed by a central state-owned enterprise (SOE), with strong financial strength and a professional operation team.',
+
                 'vessel-route-info': '🚢 Vessel & Route Info',
                 'sailing-period': '📅 Sailing Period',
                 'june-2026': 'June 2026',
@@ -1310,7 +1315,9 @@
                 'ports-of-discharge': 'Ports of Discharge',
                 'jeddah-damietta': 'Jeddah / Damietta / Med Ports',
                 'dwt-58000': '58000',
+                'vessel-capacity': 'DWT 58000',
                 'current-position': 'Current Position',
+                'contact-us': '📩 Contact Us',
                 'open-jingtang': 'Awaiting Port Consolidation',
                 'steel': 'Steel',
                 'equipment': 'Equipment',
@@ -1335,7 +1342,12 @@
             document.querySelectorAll('[data-lang-key]').forEach(element => {
                 const key = element.getAttribute('data-lang-key');
                 if (translations[lang][key]) {
-                    element.textContent = translations[lang][key];
+                    // 检查元素类型，如果是input或textarea，更新placeholder属性
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
                 }
             });
             
@@ -1505,19 +1517,9 @@
         
         // 交互效果
         function initInteractions() {
-            // 标签点击效果
-            document.querySelectorAll('.tag').forEach(function(tag) {
-                tag.addEventListener('click', function() {
-                    alert('您选择了: ' + this.textContent);
-                });
-            });
+
             
-            // 优势列表点击效果
-            document.querySelectorAll('.advantage-list li').forEach(function(item) {
-                item.addEventListener('click', function() {
-                    alert('了解更多: ' + this.textContent);
-                });
-            });
+
             
             // Get Quote 按钮点击效果
             document.querySelectorAll('.btn[data-lang-key="get-quote"]').forEach(function(btn) {
